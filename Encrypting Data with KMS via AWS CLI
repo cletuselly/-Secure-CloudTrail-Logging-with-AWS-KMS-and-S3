@@ -1,0 +1,5 @@
+aws kms encrypt \
+    --key-id arn:aws:kms:us-east-2:124355676326:key/f1be8a2f-b7c6-476c-baef-7195d6e63e98 \
+    --plaintext fileb://plaintext.txt \
+    --output text \
+    --query CiphertextBlob
